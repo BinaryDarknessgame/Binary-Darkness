@@ -1,0 +1,122 @@
+/* Définir des polices effrayantes et sombres */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    background-color: #121212; /* Fond sombre */
+    color: #e5e5e5; /* Texte clair */
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    color: #f44336; /* Rouge effrayant */
+    text-shadow: 2px 2px 5px #000000;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+}
+
+section.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 0;
+}
+
+button.btn {
+    background-color: #444;
+    color: #76ff03; /* Vert fluo inquiétant */
+    border: 2px solid #76ff03;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-family: 'Press Start 2P', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+button.btn:hover {
+    background-color: #76ff03;
+    color: #121212;
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.8);
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #1a1a1a;
+    color: #888;
+    margin-top: 50px;
+    font-size: 0.8rem;
+    border-top: 2px solid #f44336;
+}
+
+footer p {
+    letter-spacing: 1px;
+}
+
+body {
+  cursor: none; /* Cache le curseur par défaut sur tout le site */
+}
+
+a, button {
+  cursor: none; /* Cache aussi le curseur sur les liens et boutons */
+}
+
+/* Curseur personnalisé */
+.custom-cursor {
+  position: fixed;
+  width: 18px;
+  height: 18px;
+  background: radial-gradient(circle, #ff4081 0%, #ff80ab 60%, transparent 100%);
+  border: 2px solid #ff4081; /* Contour rose */
+  border-radius: 50%; /* Forme circulaire */
+  pointer-events: none; /* Ignore les clics sur le curseur */
+  transform: translate(-50%, -50%); /* Centre le curseur par rapport à la souris */
+  transition: transform 0.1s ease-out, width 0.3s, height 0.3s, opacity 0.3s;
+  z-index: 9999; /* Toujours au-dessus */
+  box-shadow: 0 0 10px #ff80ab, 0 0 20px #ff4081;
+}
+
+/* Effet dynamique au survol */
+.custom-cursor.active {
+  width: 24px;
+  height: 24px;
+  background: radial-gradient(circle, #ff80ab 0%, #ff4081 60%, transparent 100%);
+  box-shadow: 0 0 15px #ff80ab, 0 0 30px #ff4081;
+}
+
+/* Animation pulsante */
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+
+.custom-cursor {
+  animation: pulse 1.5s infinite ease-in-out;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Binary Darkness - Dark Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenue dans l'ombre de Binary Darkness</h1>
+        <p>Explorez les ténèbres et le pouvoir du programme...</p>
+    </header>
+    
+    <!-- Section des boutons -->
+    <section class="buttons">
+        <!-- Bouton Téléchargement -->
+        <button class="btn" id="downloadButton">Télécharger Binary Darkness</button>
+
+        <!-- Bouton Histoire -->
+        <button class="btn" onclick="window.location.href='histoire-binary-darkness.html'">Histoire de Binary Darkness</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Binary Darkness Inc. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Script pour le téléchargement simulé -->
+    <script>
+        document.getElementById('downloadButton').addEventListener('click', function() {
+            // Chemin relatif vers le fichier dans le dossier 'assets'
+            const filePath = "assets/dynari_darknes.zip";  // Le fichier se trouve dans le dossier 'assets'
+            const link = document.createElement('a');
+            link.href = filePath;  // Lien vers le fichier
+            link.download = 'dynari_darknes.zip';  // Nom du fichier téléchargé
+            link.click();  // Lance le téléchargement
+        });
+    </script>
+</body>
+</html>
