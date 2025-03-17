@@ -12,6 +12,7 @@ body {
     background-color: #121212; /* Fond sombre */
     color: #e5e5e5; /* Texte clair */
     line-height: 1.6;
+    cursor: none; /* Cache le curseur par défaut sur tout le site */
 }
 
 header {
@@ -74,10 +75,7 @@ footer p {
     letter-spacing: 1px;
 }
 
-body {
-  cursor: none; /* Cache le curseur par défaut sur tout le site */
-}
-
+/* Curseur personnalisé */
 a, button {
   cursor: none; /* Cache aussi le curseur sur les liens et boutons */
 }
@@ -119,4 +117,15 @@ a, button {
 
 .custom-cursor {
   animation: pulse 1.5s infinite ease-in-out;
+}
+
+/* Petit texte vert en bas de la page */
+.small-text {
+    font-size: 6px;  /* Taille très petite */
+    color: green;    /* Couleur verte */
+    position: fixed;
+    bottom: 10px;    /* Positionné à 10px du bas de la page */
+    left: 50%;       /* Centré horizontalement */
+    transform: translateX(-50%);  /* Ajuste pour centrer parfaitement */
+    z-index: 9998;  /* Un peu moins que le curseur personnalisé */
 }
