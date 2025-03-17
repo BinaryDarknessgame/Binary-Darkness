@@ -10,6 +10,10 @@
         .small-text {
             font-size: 6px;  /* Taille très petite */
             color: green;    /* Couleur verte */
+            position: fixed;
+            bottom: 10px;    /* Positionné à 10px du bas de la page */
+            left: 50%;       /* Centré horizontalement */
+            transform: translateX(-50%);  /* Ajuste pour centrer parfaitement */
         }
     </style>
 </head>
@@ -28,12 +32,12 @@
         <button class="btn" onclick="window.location.href='histoire-binary-darkness.html'">Histoire de Binary Darkness</button>
     </section>
 
-    <!-- Petit texte vert -->
-    <p class="small-text">345345</p>
-
     <footer>
         <p>&copy; 2024 Binary Darkness Inc. Tous droits réservés.</p>
     </footer>
+
+    <!-- Petit texte vert en bas de la page -->
+    <p class="small-text">345345</p>
 
     <!-- Script pour le téléchargement simulé -->
     <script>
